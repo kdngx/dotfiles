@@ -18,15 +18,15 @@ set title
 set visualbell
 set ignorecase
 set smartcase
-set termguicolors
 set background=dark
 colorscheme lunaperche
 set autoread
 set autoindent
 set incsearch
 set hlsearch
-set wildmenu
+set wildcharm=<C-z>
 set wildoptions=pum,tagfile
+set wildmenu
 set history=10000
 let &showbreak='+++ '
 set lcs=tab:>\ ,trail:-,nbsp:+

@@ -24,8 +24,7 @@ GIT_PS1_HIDE_IF_PWD_IGNORED=true
 GIT_PS1_COMPRESSSPARSESTATE=true
 # enable command-subsitution in ps1
 setopt PROMPT_SUBST
-NL=$'\n'
-PS1='$NL%B%F{magenta}%0~%f%b% %F{blue}$(__git_ps1 " [%s]") %f%B%(?.%F{green}.%F{red})%(!.#.$)%f%b '
+PS1='%B%F{magenta}%0~%f%b% %F{blue}$(__git_ps1 " [%s]") %f%(?..%F{red})%(!.#.$)%f%b '
 # activate autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source .profile

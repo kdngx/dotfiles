@@ -1,4 +1,3 @@
-" .ideavimrc is a configuration file for IdeaVim plugin.
 " you can find a list of commands here: https://jb.gg/h38q75
 " find more examples here: https://jb.gg/share-ideavimrc
 source ~/.vimrc
@@ -7,10 +6,6 @@ nnoremap <Space>r viw"0y:%s/<C-r>0//gI<Left><Left><Left>
 vnoremap <Space>r "0y:%s/<C-r>0//gI<Left><Left><Left>
 " search current marked text in IntelliJ only
 vnoremap // "0y/\V<C-r>0<CR>
-" enable IdeaVim plugins https://jb.gg/ideavim-plugins
-set highlightedyank
-set surround
-set commentary
 " ide specific options
 set ideastatusicon=gray
 set ideawrite=file
