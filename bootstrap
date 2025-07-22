@@ -26,6 +26,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     echo '[-] installing xcode command line tools [-]'
     xcode-select --install
   fi
+
   if ! hash brew &> /dev/null; then
     echo '[-] installing homebrew [-]'
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -117,7 +118,6 @@ else
     env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && \
       gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
   fi
-
 fi
 
 echo '[-] downloading git-prompt.sh script [-]'
