@@ -4,6 +4,7 @@ setopt SHARE_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt EXTENDED_HISTORY
 setopt NO_BEEP
+setopt IGNORE_EOF
 bindkey -e
 bindkey '\e[1;5D' backward-word
 bindkey '\e[1;5C' forward-word

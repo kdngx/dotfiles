@@ -9,6 +9,8 @@ set shiftround
 set showmatch
 set splitbelow
 set splitright
+set number
+set relativenumber
 set title
 set visualbell
 set ignorecase

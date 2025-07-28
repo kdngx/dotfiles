@@ -10,10 +10,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.api.nvim_create_autocmd("QuickFixCmdPost", {
     pattern = "[^l]*",
-    callback = function(e)
-        vim.cmd.cwindow()
-        vim.opt_local.cursorline = true
-    end
+    callback = function(e) vim.cmd.cwindow() end
 })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
