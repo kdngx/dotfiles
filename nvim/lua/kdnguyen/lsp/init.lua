@@ -14,10 +14,10 @@ vim.lsp.config("*", {
     detached = true,
 })
 
-require("laefhat.lsp.clangd")
-require("laefhat.lsp.zls")
-require("laefhat.lsp.tsserver")
-require("laefhat.lsp.pylsp")
+require("kdnguyen.lsp.clangd")
+require("kdnguyen.lsp.zls")
+require("kdnguyen.lsp.tsserver")
+require("kdnguyen.lsp.pylsp")
 
 -- can be disabled by `:lua vim.lsp.enable("tsserver", false)` for example
 vim.lsp.enable({ "clangd", "zls", "tsserver", "pylsp" })

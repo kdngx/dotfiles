@@ -1,7 +1,7 @@
-require("laefhat.options")
-require("laefhat.keymaps")
-require("laefhat.lsp")
-require("laefhat.plugins")
+require("kdnguyen.options")
+require("kdnguyen.keymaps")
+require("kdnguyen.lsp")
+require("kdnguyen.plugins")
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = { "help", "qf", "checkhealth", "fugitive", "fugitiveblame" },

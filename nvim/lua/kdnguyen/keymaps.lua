@@ -26,12 +26,3 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = "netrw",
     callback = function(e) vim.keymap.set("n", "<C-c>", vim.cmd.Rexplore, { buffer = 0 }) end
 })
-
-vim.keymap.set("n", "<Space>tg", function()
-    if vim.fn.executable("ctags") < 1 then
-        vim.notify("no ctags installation found", vim.log.levels.WARN)
-        return
-    end
-    local job = vim.fn.jobstart { "ctags", "--tag-relative=never", "-G", "-R", "." }
-    vim.notify("generate tags..., id: " .. job, vim.log.levels.INFO)
-end)

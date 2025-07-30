@@ -1,3 +1,7 @@
+if vim.fn.has("mac") then
+    vim.opt.rtp:append("/opt/homebrew/opt/fzf")
+end
+
 vim.g.fzf_layout = { down = "41%" }
 vim.g.fzf_vim = { preview_window = { "right,41%,<70(up,41%)" } }
 
