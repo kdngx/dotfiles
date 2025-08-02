@@ -4,6 +4,8 @@ set -e
 pattern="$1"
 if [[ -z "$pattern" ]]; then
   echo "usage: $0 <pattern>"
+  tree -L 3 -d ~/personal
+  tree -L 3 -d ~/repos
   exit 1
 fi
 
