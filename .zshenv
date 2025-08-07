@@ -11,3 +11,6 @@ SAVEHIST=10000
 HISTSIZE=10000
 export TERM=tmux-256color
 export COLORTERM=truecolor
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
