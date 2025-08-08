@@ -21,3 +21,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     pattern = "*",
     callback = function(e) vim.hl.on_yank({ higroup = "IncSearch", timeout = 150, silent = true }) end
 })
+
+-- generate tags in the background
+vim.api.nvim_create_user_command("Tag", function(opts)
+    if vim.fn.executable("ctags") == 0 then
+        vim.notify("no ctags installation found", vim.log.levels.WARN)
+        return
+    end
+    local job = vim.fn.jobstart { "ctags", "--tag-relative=never", "-G", "-R", "." }
+    vim.notify("generate tags..., id: " .. job, vim.log.levels.INFO)
+end, { nargs = 0 })
